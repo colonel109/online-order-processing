@@ -15,7 +15,6 @@ class ImportSettings:
             df_indexed = df.set_index(index_col)
             final_dict = df_indexed.to_dict(orient='index')
             self.data = final_dict
-            print(self.data)
             return final_dict
 
         except Exception as e:
